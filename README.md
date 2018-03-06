@@ -14,7 +14,7 @@ This is a very simple flashlight for iOS, that nonetheless implements features n
 
 <p align="center">
   <img src="https://github.com/fredpi/TrivialTorch/blob/stable/Screenshots.jpg"
-      height=400 alt="Trivial Torch Screenshots">
+      style="width: 8000; height: auto;" alt="Trivial Torch Screenshots">
 </p>
 
 ## The App Review Story
