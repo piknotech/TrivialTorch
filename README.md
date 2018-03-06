@@ -7,9 +7,15 @@
 
 This is a very simple flashlight for iOS, that nonetheless implements features not available for any flashlight app out there:
 - Easy, clean UI
+- Focus on main features: Controlling brightness & strobe frequency
 - 3D Touch Quick Actions
 - iPad support
 - Ad-free
+
+<p align="center">
+  <img src="https://github.com/fredpi/TrivialTorch/blob/stable/Screenshots.jpg"
+      height=400 alt="Trivial Torch Screenshots">
+</p>
 
 ## The App Review Story
 
