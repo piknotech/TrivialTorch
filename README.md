@@ -45,12 +45,16 @@ After numerous chats and a 20 minute call with Apple, it got apparent that Apple
 >
 >- I don't think a general rule banning apps from a category is useful. Consider 100 very bad, useless or outdated apps existing in one category and one new app that is far better than all of them. The latter will be rejected. Why? Because the former were released alongside iOS 2.
 
-I find Apple's position highly crticial, defeating the **base ruleset** of App Review – only allowing apps that:
+I find Apple's position highly crticial, defeating the **base ruleset** of App Review as I see it – only allowing apps that:
 - are valuable to any user
 - don't exploit or harm the user
 - don't infringe anyone's rights or feelings an improper way
 
-What Apple is doing here, is pointing onto the word *flashlight* in the guideline, arguing the category is fully saturated and thereby **blocking new, intuitive concepts by protecting old boilerplate apps**. I understand the desire to keep the store clean, but that should start with old apps and not with new modern concepts that unarguably offer features not on the app store yet.
+What Apple is doing here, is focusing onto the word *flashlight* in the guideline, arguing the category is fully saturated, instead of considering individual cases individually.
+
+They are thereby **blocking new, intuitive concepts by protecting legacy apps**.
+
+I understand the desire to keep the store clean, but that should start with old apps and not with modern concepts that unarguably offer features not available on the app store yet.
 
 ### The outcome
 
