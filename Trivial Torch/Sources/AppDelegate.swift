@@ -19,14 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         InstallationManager.shared.store()
 
         // Load view controller
-        guard let mainVc = UIStoryboard(
-            name: "Main",
-            bundle: nil
-        ).instantiateInitialViewController() as? MainViewController else {
-            fatalError("Unable to fetch initial vc")
-        }
-
-        MainViewController.shared = mainVc
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = MainViewController.shared
         window?.makeKeyAndVisible()
@@ -45,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
+        MainViewController.shared.turnScreenOn()
         TorchManager.shared.stop()
     }
 
