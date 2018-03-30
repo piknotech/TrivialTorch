@@ -1,8 +1,17 @@
-# Trivial Torch
+<p align="center">
+    <img src="https://raw.githubusercontent.com/fredpi/TrivialTorch/stable/Logo.png" width=600>
+</p>
 
 <p align="center">
-  <img src="https://github.com/fredpi/TrivialTorch/blob/stable/AppIcon.png"
-      width=220 height=220 alt="Trivial Torch App Icon">
+    <a href="https://travis-ci.org/fredpi/TrivialTorch">
+        <img src="https://travis-ci.org/fredpi/TrivialTorch.svg?branch=stable" alt="Build Status">
+    </a>
+    <a href="#">
+        <img src="https://img.shields.io/badge/Swift-4.1-FFAC45.svg" alt="Swift: 4.1">
+    </a>
+    <a href="https://github.com/fredpi/TrivialTorch/blob/stable/LICENSE.md">
+        <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="License: MIT">
+    </a>
 </p>
 
 This is a very simple flashlight for iOS, that nonetheless implements features not available in any flashlight app out there:
