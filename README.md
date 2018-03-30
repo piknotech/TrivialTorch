@@ -70,4 +70,4 @@ I understand the desire to keep the store clean, but that should start with old 
 Now that *Trivial Torch* is finally rejected, I release it here on GitHub as an alternative to anybody who is looking for a lightweight flashlight app to install themselves using Xcode.
 
 ## License
-This project is released under the [GNU General Public License, version 3 (GPL-3.0)](http://opensource.org/licenses/GPL-3.0).
+This project is released under the [MIT License](http://opensource.org/licenses/MIT). See [LICENSE.md](https://github.com/fredpi/TrivialTorch/blob/stable/LICENSE.md) for details.
