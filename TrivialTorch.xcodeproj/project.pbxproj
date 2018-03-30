@@ -11,6 +11,7 @@
 		CC0BFEEA202F666B002B945F /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BFEE9202F666B002B945F /* Slider.swift */; };
 		CC0BFEEC202FA1BB002B945F /* SliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BFEEB202FA1BB002B945F /* SliderDelegate.swift */; };
 		CC1ECFA82030ED8900F8C161 /* TorchManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECFA72030ED8900F8C161 /* TorchManagerDelegate.swift */; };
+		CC3CDC3C206EAA45004D6432 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = CC3CDC3B206EAA45004D6432 /* .travis.yml */; };
 		CC59C8942038C7C200038A84 /* AppReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8932038C7C200038A84 /* AppReviewManager.swift */; };
 		CC59C8972038C7D400038A84 /* InstallationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8962038C7D400038A84 /* InstallationManager.swift */; };
 		CC59C8992038C7FB00038A84 /* VersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8982038C7FB00038A84 /* VersionInfo.swift */; };
@@ -31,6 +32,7 @@
 		CC0BFEE9202F666B002B945F /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		CC0BFEEB202FA1BB002B945F /* SliderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderDelegate.swift; sourceTree = "<group>"; };
 		CC1ECFA72030ED8900F8C161 /* TorchManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchManagerDelegate.swift; sourceTree = "<group>"; };
+		CC3CDC3B206EAA45004D6432 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		CC59C8932038C7C200038A84 /* AppReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewManager.swift; sourceTree = "<group>"; };
 		CC59C8962038C7D400038A84 /* InstallationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationManager.swift; sourceTree = "<group>"; };
 		CC59C8982038C7FB00038A84 /* VersionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfo.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CC8E83CE2034E255005C82E1 /* .swiftlint.yml */,
+				CC3CDC3B206EAA45004D6432 /* .travis.yml */,
 			);
 			name = "Root Files";
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3CDC3C206EAA45004D6432 /* .travis.yml in Resources */,
 				CC8E83CF2034E255005C82E1 /* .swiftlint.yml in Resources */,
 				CCDC2D0E202F5DA600B97DA0 /* LaunchScreen.storyboard in Resources */,
 				CCDC2D0B202F5DA600B97DA0 /* Assets.xcassets in Resources */,
