@@ -11,12 +11,10 @@
 		CC0BFEEA202F666B002B945F /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BFEE9202F666B002B945F /* Slider.swift */; };
 		CC0BFEEC202FA1BB002B945F /* SliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BFEEB202FA1BB002B945F /* SliderDelegate.swift */; };
 		CC1ECFA82030ED8900F8C161 /* TorchManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECFA72030ED8900F8C161 /* TorchManagerDelegate.swift */; };
-		CC3CDC3C206EAA45004D6432 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = CC3CDC3B206EAA45004D6432 /* .travis.yml */; };
 		CC59C8942038C7C200038A84 /* AppReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8932038C7C200038A84 /* AppReviewManager.swift */; };
 		CC59C8972038C7D400038A84 /* InstallationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8962038C7D400038A84 /* InstallationManager.swift */; };
 		CC59C8992038C7FB00038A84 /* VersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8982038C7FB00038A84 /* VersionInfo.swift */; };
 		CC59C89B2038C80700038A84 /* InstallationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C89A2038C80700038A84 /* InstallationInfo.swift */; };
-		CC8E83CF2034E255005C82E1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CC8E83CE2034E255005C82E1 /* .swiftlint.yml */; };
 		CCAFADEB2031C6F70010F836 /* Torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADEA2031C6F70010F836 /* Torch.swift */; };
 		CCAFADEE20322D130010F836 /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADED20322D130010F836 /* TorchMode.swift */; };
 		CCAFADF020322D2B0010F836 /* TorchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADEF20322D2B0010F836 /* TorchError.swift */; };
@@ -228,7 +226,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CCDC2CFB202F5DA600B97DA0 /* Build configuration list for PBXProject "Trivial Torch" */;
+			buildConfigurationList = CCDC2CFB202F5DA600B97DA0 /* Build configuration list for PBXProject "TrivialTorch" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,8 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC3CDC3C206EAA45004D6432 /* .travis.yml in Resources */,
-				CC8E83CF2034E255005C82E1 /* .swiftlint.yml in Resources */,
 				CCDC2D0E202F5DA600B97DA0 /* LaunchScreen.storyboard in Resources */,
 				CCDC2D0B202F5DA600B97DA0 /* Assets.xcassets in Resources */,
 				CCDC2D09202F5DA600B97DA0 /* Main.storyboard in Resources */,
@@ -274,7 +270,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "exit 0\nif which swiftlint > /dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint > /dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -476,7 +472,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CCDC2CFB202F5DA600B97DA0 /* Build configuration list for PBXProject "Trivial Torch" */ = {
+		CCDC2CFB202F5DA600B97DA0 /* Build configuration list for PBXProject "TrivialTorch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCDC2D10202F5DA600B97DA0 /* Debug */,
