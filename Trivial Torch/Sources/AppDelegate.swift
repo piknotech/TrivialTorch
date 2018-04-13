@@ -3,7 +3,7 @@
 //  Trivial Torch
 //
 //  Created by Frederick Pietschmann on 10.02.18.
-//  Copyright © 2018 Frederick Pietschmann. All rights reserved.
+//  Copyright © 2018 piknotech. All rights reserved.
 //
 
 import UIKit
@@ -48,13 +48,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: 3D Touch Quick Actions
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         switch shortcutItem.type {
-        case "de.fredpi.trivialtorch.torch":
+        case "com.piknotech.trivialtorch.torch":
             MainViewController.shared.set(brightness: 1, strobe: 0)
 
-        case "de.fredpi.trivialtorch.mediumstrobe":
+        case "com.piknotech.trivialtorch.mediumstrobe":
             MainViewController.shared.set(brightness: 1, strobe: 0.5)
 
-        case "de.fredpi.trivialtorch.faststrobe":
+        case "com.piknotech.trivialtorch.faststrobe":
             MainViewController.shared.set(brightness: 1, strobe: 1)
 
         default:

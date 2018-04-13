@@ -3,7 +3,7 @@
 //  Trivial Torch
 //
 //  Created by Frederick Pietschmann on 12.02.18.
-//  Copyright © 2018 Frederick Pietschmann. All rights reserved.
+//  Copyright © 2018 piknotech. All rights reserved.
 //
 
 import Foundation

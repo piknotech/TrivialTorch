@@ -30,7 +30,7 @@
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Torch</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>de.fredpi.trivialtorch.torch</string>
+			<string>com.piknotech.trivialtorch.torch</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconFile</key>
@@ -38,7 +38,7 @@
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Medium Strobe</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>de.fredpi.trivialtorch.mediumstrobe</string>
+			<string>com.piknotech.trivialtorch.mediumstrobe</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconFile</key>
@@ -46,7 +46,7 @@
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Fast Strobe</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>de.fredpi.trivialtorch.faststrobe</string>
+			<string>com.piknotech.trivialtorch.faststrobe</string>
 		</dict>
 	</array>
 	<key>UILaunchStoryboardName</key>

@@ -15,6 +15,8 @@
 		CC59C8972038C7D400038A84 /* InstallationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8962038C7D400038A84 /* InstallationManager.swift */; };
 		CC59C8992038C7FB00038A84 /* VersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8982038C7FB00038A84 /* VersionInfo.swift */; };
 		CC59C89B2038C80700038A84 /* InstallationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C89A2038C80700038A84 /* InstallationInfo.swift */; };
+		CC7A274820813AEF00F01B0D /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = CC7A274720813AEF00F01B0D /* LICENSE.md */; };
+		CC7A274A20813AF400F01B0D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CC7A274920813AF400F01B0D /* README.md */; };
 		CCAFADEB2031C6F70010F836 /* Torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADEA2031C6F70010F836 /* Torch.swift */; };
 		CCAFADEE20322D130010F836 /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADED20322D130010F836 /* TorchMode.swift */; };
 		CCAFADF020322D2B0010F836 /* TorchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADEF20322D2B0010F836 /* TorchError.swift */; };
@@ -35,6 +37,8 @@
 		CC59C8962038C7D400038A84 /* InstallationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationManager.swift; sourceTree = "<group>"; };
 		CC59C8982038C7FB00038A84 /* VersionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfo.swift; sourceTree = "<group>"; };
 		CC59C89A2038C80700038A84 /* InstallationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationInfo.swift; sourceTree = "<group>"; };
+		CC7A274720813AEF00F01B0D /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		CC7A274920813AF400F01B0D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CC8E83CE2034E255005C82E1 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CCAFADEA2031C6F70010F836 /* Torch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Torch.swift; sourceTree = "<group>"; };
 		CCAFADED20322D130010F836 /* TorchMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchMode.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				CCDC2D02202F5DA600B97DA0 /* Trivial Torch */,
 				CC8E83D02034E259005C82E1 /* Root Files */,
 				CCDC2D01202F5DA600B97DA0 /* Products */,
+				CC7A274720813AEF00F01B0D /* LICENSE.md */,
+				CC7A274920813AF400F01B0D /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,7 +224,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Frederick Pietschmann";
+				ORGANIZATIONNAME = piknotech;
 				TargetAttributes = {
 					CCDC2CFF202F5DA600B97DA0 = {
 						CreatedOnToolsVersion = 9.2;
@@ -249,7 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7A274820813AEF00F01B0D /* LICENSE.md in Resources */,
 				CCDC2D0E202F5DA600B97DA0 /* LaunchScreen.storyboard in Resources */,
+				CC7A274A20813AF400F01B0D /* README.md in Resources */,
 				CCDC2D0B202F5DA600B97DA0 /* Assets.xcassets in Resources */,
 				CCDC2D09202F5DA600B97DA0 /* Main.storyboard in Resources */,
 			);
@@ -442,7 +450,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Trivial Torch/Resources/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.fredpi.trivialtorch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.piknotech.trivialtorch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,7 +470,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Trivial Torch/Resources/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.fredpi.trivialtorch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.piknotech.trivialtorch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
