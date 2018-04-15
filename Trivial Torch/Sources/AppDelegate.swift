@@ -29,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Request review
         AppReviewManager.shared.request()
 
+        // Enter screenshot creation mode
+        // ScreenshotManager.shared.takeover()
+
         return true
     }
 

@@ -17,6 +17,7 @@
 		CC59C89B2038C80700038A84 /* InstallationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C89A2038C80700038A84 /* InstallationInfo.swift */; };
 		CC7A274820813AEF00F01B0D /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = CC7A274720813AEF00F01B0D /* LICENSE.md */; };
 		CC7A274A20813AF400F01B0D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CC7A274920813AF400F01B0D /* README.md */; };
+		CCA9ACC12083E89000FD59F7 /* ScreenshotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9ACC02083E89000FD59F7 /* ScreenshotManager.swift */; };
 		CCAFADEB2031C6F70010F836 /* Torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADEA2031C6F70010F836 /* Torch.swift */; };
 		CCAFADEE20322D130010F836 /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADED20322D130010F836 /* TorchMode.swift */; };
 		CCAFADF020322D2B0010F836 /* TorchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADEF20322D2B0010F836 /* TorchError.swift */; };
@@ -41,6 +42,7 @@
 		CC7A274720813AEF00F01B0D /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		CC7A274920813AF400F01B0D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CC8E83CE2034E255005C82E1 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		CCA9ACC02083E89000FD59F7 /* ScreenshotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotManager.swift; sourceTree = "<group>"; };
 		CCAFADEA2031C6F70010F836 /* Torch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Torch.swift; sourceTree = "<group>"; };
 		CCAFADED20322D130010F836 /* TorchMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchMode.swift; sourceTree = "<group>"; };
 		CCAFADEF20322D2B0010F836 /* TorchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchError.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				CC59C8932038C7C200038A84 /* AppReviewManager.swift */,
 				CC59C8962038C7D400038A84 /* InstallationManager.swift */,
+				CCA9ACC02083E89000FD59F7 /* ScreenshotManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				CCAFADF020322D2B0010F836 /* TorchError.swift in Sources */,
 				CC59C89B2038C80700038A84 /* InstallationInfo.swift in Sources */,
 				CC59C8942038C7C200038A84 /* AppReviewManager.swift in Sources */,
+				CCA9ACC12083E89000FD59F7 /* ScreenshotManager.swift in Sources */,
 				CC0BFEE8202F6663002B945F /* TorchManager.swift in Sources */,
 				CCF7A1E82083B1B6009DAC09 /* AnimationInfo.swift in Sources */,
 				CCAFADEE20322D130010F836 /* TorchMode.swift in Sources */,
