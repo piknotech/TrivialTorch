@@ -33,11 +33,11 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        brightnessSlider.dotMask = #imageLiteral(resourceName: "brightnessMask")
+        brightnessSlider.icon = #imageLiteral(resourceName: "brightnessMask")
         brightnessSlider.stepCount = 10
         brightnessSlider.delegate = self
 
-        strobeSlider.dotMask = #imageLiteral(resourceName: "strobeMask")
+        strobeSlider.icon = #imageLiteral(resourceName: "strobeMask")
         strobeSlider.stepCount = 20
         strobeSlider.delegate = self
 
@@ -96,13 +96,13 @@ extension MainViewController: TorchManagerDelegate {
     func setTorchSettingError(_ torchSettingError: TorchError?) {
         switch torchSettingError {
         case .some(.configurationLocked):
-            errorLabel.text = "Error accessing flashlight."
+            errorLabel.text = "Error accessing flashlight"
 
         case .some(.torchUnavailable):
-            errorLabel.text = "Flashlight currently unavailable."
+            errorLabel.text = "Flashlight currently unavailable"
 
         case .some(.torchUninstalled):
-            errorLabel.text = "No flashlight installed."
+            errorLabel.text = "No flashlight installed"
 
         case .none:
             errorLabel.text = ""

@@ -11,7 +11,7 @@ import UIKit
 class Slider: UIView {
     // MARK: - Properties
     var stepCount: Double = 2
-    var dotMask: UIImage?
+    var icon: UIImage?
     private var wrappedProgress: Double = 0
     var progress: Double {
         get {
@@ -22,13 +22,13 @@ class Slider: UIView {
             let oldValue = progress
             wrappedProgress = ((stepCount - 1) * newValue).rounded() / (stepCount - 1)
             if wrappedProgress != oldValue {
-                updateDotViewOrigin(animated: true)
+                layout()
             }
         }
     }
 
     private var backgroundLayer: CAShapeLayer
-    private var dot: UIImageView
+    private var iconImageView: UIImageView
     private var shouldTrackTouchMovements = false
     private var dotWidth: CGFloat {
         return 0.8 * bounds.width
@@ -39,20 +39,19 @@ class Slider: UIView {
     // MARK: - Initializers
     required init?(coder aDecoder: NSCoder) {
         backgroundLayer = CAShapeLayer()
-        dot = UIImageView()
+        iconImageView = UIImageView()
 
         super.init(coder: aDecoder)
 
         backgroundColor = .clear
         isMultipleTouchEnabled = false
 
-        backgroundLayer.strokeColor = UIColor.white.cgColor
         backgroundLayer.fillColor = UIColor.white.cgColor
         backgroundLayer.opacity = 0.4
         layer.addSublayer(backgroundLayer)
 
-        dot.tintColor = UIColor.white.withAlphaComponent(0.6)
-        addSubview(dot)
+        iconImageView.tintColor = UIColor.white.withAlphaComponent(0.6)
+        addSubview(iconImageView)
     }
 
     // MARK: - Methods: Layout
@@ -64,58 +63,34 @@ class Slider: UIView {
     }
 
     func layout() {
-        layoutPath()
-        layoutDotView()
-    }
-
-    func layoutPath() {
         let cornerRadius = bounds.width / 2
-        let path = UIBezierPath(
-            roundedRect: CGRect(
-                x: 0,
-                y: 0,
-                width: bounds.width,
-                height: bounds.height
-            ),
-            cornerRadius: cornerRadius
+
+        // Layout icon
+        iconImageView.frame.size = CGSize(width: dotWidth, height: dotWidth)
+        iconImageView.image = icon?.withRenderingMode(.alwaysTemplate)
+        let distance = (bounds.width - dotWidth) / 2
+        iconImageView.frame.origin = CGPoint(
+            x: distance,
+            y: distance + (1 - CGFloat(progress)) * (bounds.height - dotWidth - 2 * distance)
         )
 
-        path.append(path.reversing())
-
+        // Layout path
+        let path = UIBezierPath(
+            roundedRect: CGRect(origin: .zero, size: bounds.size),
+            cornerRadius: cornerRadius
+        )
+        let circleCutoutPath = UIBezierPath(ovalIn: iconImageView.frame)
+        path.append(circleCutoutPath.reversing())
         backgroundLayer.path = path.cgPath
     }
 
-    func layoutDotView() {
-        dot.frame.size = CGSize(width: dotWidth, height: dotWidth)
-        updateDotViewOrigin()
-        dot.image = UIGraphicsImageRenderer(bounds: dot.bounds).image { _ in
-            dotMask?.draw(in: dot.bounds)
-        }.withRenderingMode(.alwaysTemplate)
-    }
-
-    func updateDotViewOrigin(animated: Bool = false) {
-        let update = { [unowned self] in
-            let distance = (self.bounds.width - self.dotWidth) / 2
-            self.dot.frame.origin = CGPoint(
-                x: distance,
-                y: distance + (1 - CGFloat(self.progress)) * (self.bounds.height - self.dotWidth - 2 * distance)
-            )
-        }
-
-        if animated {
-            UIView.animate(withDuration: 0.15, animations: update)
-        } else {
-            update()
-        }
-    }
-
-    // MARK: TouchHandling
+    // MARK: Touch Handling
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
 
         guard let touch = touches.first else { return }
         let location = touch.location(in: self)
-        let dotCenter = dot.center
+        let dotCenter = iconImageView.center
         let radius = dotWidth / 2
         let centerDistance = sqrt(pow(location.y - dotCenter.y, 2) + pow(location.x - dotCenter.x, 2))
 
