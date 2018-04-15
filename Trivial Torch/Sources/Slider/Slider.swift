@@ -68,23 +68,15 @@ class Slider: UIView {
     func layout(animated: Bool = false) {
         // Define constants
         let cornerRadius = bounds.width / 2
-        let animationTime = 0.3
+        let animationDuration = 0.2
 
-        // Calculate new icon frame
+        // Calculate new icon image view frame
         let distance = (bounds.width - iconWidth) / 2
-        let newIconImageViewOrigin = CGPoint(
+        let newIconImageViewFrame = CGRect(
             x: distance,
-            y: distance + (1 - CGFloat(progress)) * (bounds.height - iconWidth - 2 * distance)
-        )
-        let newIconImageViewBounds = CGRect(
-            x: 0,
-            y: 0,
+            y: distance + (1 - CGFloat(progress)) * (bounds.height - iconWidth - 2 * distance),
             width: iconWidth,
             height: iconWidth
-        )
-        let newIconImageViewFrame = CGRect(
-            origin: newIconImageViewOrigin,
-            size: newIconImageViewBounds.size
         )
 
         // Calculate new path
@@ -95,31 +87,35 @@ class Slider: UIView {
         let circleCutoutPath = UIBezierPath(ovalIn: newIconImageViewFrame)
         newPath.append(circleCutoutPath.reversing())
 
-        // Animate
+        // Apply new values
         if animated {
             CATransaction.begin()
-            CATransaction.setDisableActions(true)
 
-            iconImageView.layer.bounds = newIconImageViewBounds
-            iconImageView.layer.position = newIconImageViewOrigin
+            iconImageView.layer.bounds = CGRect(
+                origin: .zero,
+                size: newIconImageViewFrame.size
+            )
             let boundsAnimation = CABasicAnimation(keyPath: "bounds")
-            boundsAnimation.duration = animationTime
-            let positionAnimation = CABasicAnimation(keyPath: "position")
-            positionAnimation.duration = animationTime
+            boundsAnimation.duration = animationDuration
             boundsAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
-            positionAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
-            iconImageView.layer.add(boundsAnimation, forKey: nil)
-            iconImageView.layer.add(positionAnimation, forKey: nil)
+            iconImageView.layer.add(boundsAnimation, forKey: "bounds")
 
+            iconImageView.layer.position = CGPoint(
+                x: newIconImageViewFrame.midX,
+                y: newIconImageViewFrame.midY
+            )
+            let positionAnimation = CABasicAnimation(keyPath: "position")
+            positionAnimation.duration = animationDuration
+            positionAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
+            iconImageView.layer.add(positionAnimation, forKey: "position")
+
+            backgroundLayer.path = newPath.cgPath
             let pathAnimation = CABasicAnimation(keyPath: "path")
-            pathAnimation.fromValue = backgroundLayer.path
-            pathAnimation.toValue = newPath
-            pathAnimation.duration = animationTime
+            pathAnimation.duration = animationDuration
             pathAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
             backgroundLayer.add(pathAnimation, forKey: "path")
-            backgroundLayer.path = newPath.cgPath
 
-             CATransaction.commit()
+            CATransaction.commit()
         } else {
             backgroundLayer.path = newPath.cgPath
             iconImageView.frame = newIconImageViewFrame
