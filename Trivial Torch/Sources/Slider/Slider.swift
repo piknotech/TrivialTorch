@@ -3,7 +3,7 @@
 //  Trivial Torch
 //
 //  Created by Frederick Pietschmann on 10.02.18.
-//  Copyright © 2018 piknotech. All rights reserved.
+//  Copyright © 2018 Piknotech. All rights reserved.
 //
 
 import UIKit
@@ -46,8 +46,8 @@ class Slider: UIView {
         backgroundColor = .clear
         isMultipleTouchEnabled = false
 
-        backgroundLayer.strokeColor = UIColor.black.cgColor
-        backgroundLayer.fillColor = UIColor.black.cgColor
+        backgroundLayer.strokeColor = UIColor.white.cgColor
+        backgroundLayer.fillColor = UIColor.white.cgColor
         backgroundLayer.opacity = 0.4
         layer.addSublayer(backgroundLayer)
 
@@ -69,27 +69,18 @@ class Slider: UIView {
     }
 
     func layoutPath() {
-        let width = bounds.width
-        let height = bounds.height
-        let radius = width / 2
-        let topLeftPoint = CGPoint(x: 0, y: width / 2)
-        let bottomLeftPoint = CGPoint(x: 0, y: height - width / 2)
-        let bottomRightPoint = CGPoint(x: width, y: height - width / 2)
-        let topRightPoint = CGPoint(x: width, y: width / 2)
-        let bottomMidPoint = CGPoint(x: width / 2, y: height - width / 2)
-        let topMidPoint = CGPoint(x: width / 2, y: width / 2)
+        let cornerRadius = bounds.width / 2
+        let path = UIBezierPath(
+            roundedRect: CGRect(
+                x: 0,
+                y: 0,
+                width: bounds.width,
+                height: bounds.height
+            ),
+            cornerRadius: cornerRadius
+        )
 
-        let path = UIBezierPath()
-        path.move(to: topLeftPoint)
-        path.addLine(to: bottomLeftPoint)
-        path.addLine(to: bottomMidPoint)
-        path.addArc(withCenter: bottomMidPoint, radius: radius, startAngle: 0, endAngle: .pi, clockwise: true)
-        path.addLine(to: bottomRightPoint)
-        path.addLine(to: topRightPoint)
-        path.addLine(to: topMidPoint)
-        path.addArc(withCenter: topMidPoint, radius: radius, startAngle: .pi, endAngle: 0, clockwise: true)
-        path.addLine(to: topLeftPoint)
-        path.close()
+        path.append(path.reversing())
 
         backgroundLayer.path = path.cgPath
     }

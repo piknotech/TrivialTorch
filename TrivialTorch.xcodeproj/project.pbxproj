@@ -224,7 +224,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = piknotech;
+				ORGANIZATIONNAME = Piknotech;
 				TargetAttributes = {
 					CCDC2CFF202F5DA600B97DA0 = {
 						CreatedOnToolsVersion = 9.2;
