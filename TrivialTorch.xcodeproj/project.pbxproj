@@ -25,6 +25,7 @@
 		CCDC2D09202F5DA600B97DA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDC2D07202F5DA600B97DA0 /* Main.storyboard */; };
 		CCDC2D0B202F5DA600B97DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDC2D0A202F5DA600B97DA0 /* Assets.xcassets */; };
 		CCDC2D0E202F5DA600B97DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDC2D0C202F5DA600B97DA0 /* LaunchScreen.storyboard */; };
+		CCF7A1E82083B1B6009DAC09 /* AnimationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7A1E72083B1B6009DAC09 /* AnimationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		CCDC2D0A202F5DA600B97DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCDC2D0D202F5DA600B97DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCDC2D0F202F5DA600B97DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF7A1E72083B1B6009DAC09 /* AnimationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		CC59C89C2038C81300038A84 /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				CCF7A1E72083B1B6009DAC09 /* AnimationInfo.swift */,
 				CC59C89A2038C80700038A84 /* InstallationInfo.swift */,
 				CC59C8982038C7FB00038A84 /* VersionInfo.swift */,
 			);
@@ -299,6 +302,7 @@
 				CC59C89B2038C80700038A84 /* InstallationInfo.swift in Sources */,
 				CC59C8942038C7C200038A84 /* AppReviewManager.swift in Sources */,
 				CC0BFEE8202F6663002B945F /* TorchManager.swift in Sources */,
+				CCF7A1E82083B1B6009DAC09 /* AnimationInfo.swift in Sources */,
 				CCAFADEE20322D130010F836 /* TorchMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

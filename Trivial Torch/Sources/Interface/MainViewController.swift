@@ -33,15 +33,15 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        brightnessSlider.icon = #imageLiteral(resourceName: "brightnessMask")
+        brightnessSlider.icon = #imageLiteral(resourceName: "brightness")
         brightnessSlider.stepCount = 10
         brightnessSlider.delegate = self
 
-        strobeSlider.icon = #imageLiteral(resourceName: "strobeMask")
+        strobeSlider.icon = #imageLiteral(resourceName: "strobe")
         strobeSlider.stepCount = 20
         strobeSlider.delegate = self
 
-        UIDevice.current.isProximityMonitoringEnabled = true // Blocking sensor will really turn off display
+        UIDevice.current.isProximityMonitoringEnabled = true // Will turn off display if approached
 
         let tap = UITapGestureRecognizer(target: self, action: #selector(screenTapped))
         view.addGestureRecognizer(tap)
@@ -90,7 +90,9 @@ class MainViewController: UIViewController {
 // MARK: - TorchManagerDelegate
 extension MainViewController: TorchManagerDelegate {
     func setBrightness(_ brightness: Double) {
-        torchView.alpha = CGFloat(0.5 * brightness)
+        UIView.animate(withDuration: AnimationInfo.torchViewAnimationTime) { [unowned self] in
+            self.torchView.alpha = CGFloat(0.2 * brightness)
+        }
     }
 
     func setTorchSettingError(_ torchSettingError: TorchError?) {

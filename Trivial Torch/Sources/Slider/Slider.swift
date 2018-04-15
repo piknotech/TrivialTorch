@@ -48,12 +48,13 @@ class Slider: UIView {
         super.init(coder: aDecoder)
 
         backgroundColor = .clear
-        alpha = 0.4
+        alpha = 0.6
         isMultipleTouchEnabled = false
 
-        iconImageView.tintColor = .white
+        let themeColor = UIColor.white
+        iconImageView.tintColor = themeColor
+        backgroundLayer.fillColor = themeColor.cgColor
         addSubview(iconImageView)
-        backgroundLayer.fillColor = UIColor.white.cgColor
         layer.addSublayer(backgroundLayer)
     }
 
@@ -66,11 +67,8 @@ class Slider: UIView {
     }
 
     func layout(animated: Bool = false) {
-        // Define constants
-        let cornerRadius = bounds.width / 2
-        let animationDuration = 0.2
-
         // Calculate new icon image view frame
+        let cornerRadius = bounds.width / 2
         let distance = (bounds.width - iconWidth) / 2
         let newIconImageViewFrame = CGRect(
             x: distance,
@@ -96,7 +94,7 @@ class Slider: UIView {
                 size: newIconImageViewFrame.size
             )
             let boundsAnimation = CABasicAnimation(keyPath: "bounds")
-            boundsAnimation.duration = animationDuration
+            boundsAnimation.duration = AnimationInfo.sliderAnimationTime
             boundsAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
             iconImageView.layer.add(boundsAnimation, forKey: "bounds")
 
@@ -105,13 +103,13 @@ class Slider: UIView {
                 y: newIconImageViewFrame.midY
             )
             let positionAnimation = CABasicAnimation(keyPath: "position")
-            positionAnimation.duration = animationDuration
+            positionAnimation.duration = AnimationInfo.sliderAnimationTime
             positionAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
             iconImageView.layer.add(positionAnimation, forKey: "position")
 
             backgroundLayer.path = newPath.cgPath
             let pathAnimation = CABasicAnimation(keyPath: "path")
-            pathAnimation.duration = animationDuration
+            pathAnimation.duration = AnimationInfo.sliderAnimationTime
             pathAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
             backgroundLayer.add(pathAnimation, forKey: "path")
 
