@@ -22,7 +22,7 @@ This is a very simple flashlight for iOS, that nonetheless implements features n
 - Ad-free
 
 <p align="center">
-  <img src="https://github.com/piknotech/TrivialTorch/blob/stable/Screenshots.jpg"
+  <img src="https://github.com/piknotech/TrivialTorch/blob/stable/Screenshots.png"
       style="width: 8000; height: auto;" alt="Trivial Torch Screenshots">
 </p>
 
