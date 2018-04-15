@@ -66,5 +66,6 @@ final class ScreenshotManager {
         let mainVc = MainViewController.shared
         mainVc.set(brightness: configuration.brightness, strobe: configuration.strobe)
         mainVc.setBrightness(configuration.strobe == 0 ? configuration.brightness : 0)
+        mainVc.setTorchSettingError(nil)
     }
 }
