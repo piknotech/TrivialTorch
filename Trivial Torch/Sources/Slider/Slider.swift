@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Slider: UIView {
+final class Slider: UIView {
     // MARK: - Properties
     weak var delegate: SliderDelegate?
     var stepCount: Double = 2

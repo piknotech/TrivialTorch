@@ -9,7 +9,7 @@
 import Foundation
 import StoreKit
 
-class AppReviewManager {
+final class AppReviewManager {
     // MARK: - Properties
     static let shared = AppReviewManager()
 

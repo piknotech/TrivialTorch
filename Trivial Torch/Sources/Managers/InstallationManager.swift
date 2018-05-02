@@ -8,7 +8,7 @@
 
 import Foundation
 
-class InstallationManager {
+final class InstallationManager {
     // MARK: - Properties
     static let shared = InstallationManager()
 

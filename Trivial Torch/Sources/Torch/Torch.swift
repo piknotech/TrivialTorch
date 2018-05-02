@@ -9,7 +9,7 @@
 import AVFoundation
 import Foundation
 
-class Torch {
+final class Torch {
     // MARK: - Properties
     static let shared = Torch()
     private var device: AVCaptureDevice?

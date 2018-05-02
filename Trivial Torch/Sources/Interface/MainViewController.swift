@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     // MARK: - Properties
     static let shared = getMainVc()
     override var prefersStatusBarHidden: Bool { return true }

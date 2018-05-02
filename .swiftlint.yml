@@ -41,6 +41,12 @@ file_header:
                     \/\/
 
 custom_rules:
+  class_semantics:
+    included: ".*.swift"
+    regex: '^(?!.*(final|abstract|recursive)).*class [A-Z]+.*\{'
+    name: "Class Semantics Specification"
+    message: "Specify the class semantics with either final, /* abstract */ or /* recursive */ keywords. Recursive means that class is used both itself & as a superclass."
+    severity: warning
   closing_brace_whitespace:
     included: ".*.swift"
     regex: '(?:\n| {2,})\}\)? *\n *[^ \n\})\]]'
@@ -58,6 +64,12 @@ custom_rules:
     regex: '\n *if [^\{]+\{\s*return\s*(?:nil){0,1}([^a-zA-z\n]*)\n*\s*\}(?! *else)'
     name: "If as Guard"
     message: "Don't use an if statement to just return – use guard for such cases instead."
+    severity: warning
+  inline_comment_space:
+    included: ".*.swift"
+    regex: '[^\s(\/\/)]+([ ]{2,}|)(?<!:)\/\/'
+    name: "Inline comment space"
+    message: "An inline comment should always have one single leading whitespace."
     severity: warning
   late_force_unwrapping:
     included: ".*.swift"

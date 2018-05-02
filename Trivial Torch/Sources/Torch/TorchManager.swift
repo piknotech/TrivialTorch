@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TorchManager {
+final class TorchManager {
     // MARK: - Properties
     static let shared = TorchManager()
     weak var delegate: TorchManagerDelegate?
