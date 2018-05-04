@@ -15,8 +15,6 @@
 		CC59C8972038C7D400038A84 /* InstallationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8962038C7D400038A84 /* InstallationManager.swift */; };
 		CC59C8992038C7FB00038A84 /* VersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C8982038C7FB00038A84 /* VersionInfo.swift */; };
 		CC59C89B2038C80700038A84 /* InstallationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59C89A2038C80700038A84 /* InstallationInfo.swift */; };
-		CC7A274820813AEF00F01B0D /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = CC7A274720813AEF00F01B0D /* LICENSE.md */; };
-		CC7A274A20813AF400F01B0D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CC7A274920813AF400F01B0D /* README.md */; };
 		CCA9ACC12083E89000FD59F7 /* ScreenshotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9ACC02083E89000FD59F7 /* ScreenshotManager.swift */; };
 		CCAFADEB2031C6F70010F836 /* Torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADEA2031C6F70010F836 /* Torch.swift */; };
 		CCAFADEE20322D130010F836 /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFADED20322D130010F836 /* TorchMode.swift */; };
@@ -261,9 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC7A274820813AEF00F01B0D /* LICENSE.md in Resources */,
 				CCDC2D0E202F5DA600B97DA0 /* LaunchScreen.storyboard in Resources */,
-				CC7A274A20813AF400F01B0D /* README.md in Resources */,
 				CCDC2D0B202F5DA600B97DA0 /* Assets.xcassets in Resources */,
 				CCDC2D09202F5DA600B97DA0 /* Main.storyboard in Resources */,
 			);
