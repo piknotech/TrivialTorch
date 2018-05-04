@@ -9,6 +9,10 @@
 import Foundation
 
 struct AnimationInfo {
+    // MARK: - Properties
     static let sliderAnimationTime = 0.2
     static let torchViewAnimationTime = 0.1
+
+    // MARK: - Initializers
+    private init() { }
 }
