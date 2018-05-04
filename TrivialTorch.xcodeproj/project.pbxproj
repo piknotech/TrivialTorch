@@ -169,6 +169,8 @@
 			children = (
 				CC8E83CE2034E255005C82E1 /* .swiftlint.yml */,
 				CC3CDC3B206EAA45004D6432 /* .travis.yml */,
+				CC7A274720813AEF00F01B0D /* LICENSE.md */,
+				CC7A274920813AF400F01B0D /* README.md */,
 			);
 			name = "Root Files";
 			sourceTree = "<group>";
@@ -179,8 +181,6 @@
 				CCDC2D02202F5DA600B97DA0 /* Trivial Torch */,
 				CC8E83D02034E259005C82E1 /* Root Files */,
 				CCDC2D01202F5DA600B97DA0 /* Products */,
-				CC7A274720813AEF00F01B0D /* LICENSE.md */,
-				CC7A274920813AF400F01B0D /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
