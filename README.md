@@ -17,7 +17,7 @@
         <img src="https://img.shields.io/badge/app store-unavailable-red.svg" alt="App Store: Unavailable">
     </a>
     <a href="https://github.com/piknotech/TrivialTorch/blob/stable/LICENSE.md">
-        <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="License: MIT">
+        <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="License: MIT">
     </a>
 </p>
 
