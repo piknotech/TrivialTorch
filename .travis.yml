@@ -1,4 +1,8 @@
 language: swift
-xcode_project: Trivial Torch.xcodeproj
-xcode_scheme: TrivialTorch
-osx_image: xcode9.3
+osx_image: xcode9.4
+
+before_install:
+- brew upgrade SwiftLint || true
+
+script:
+- xcodebuild clean build -project TrivialTorch.xcodeproj -scheme TrivialTorch -destination "platform=iOS Simulator,name=iPhone 8,OS=11.4" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
