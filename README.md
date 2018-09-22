@@ -7,7 +7,7 @@
         <img src="https://travis-ci.org/piknotech/TrivialTorch.svg?branch=stable" alt="Build Status">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/badge/swift-4.1-FFAC45.svg" alt="Swift: 4.1">
+        <img src="https://img.shields.io/badge/swift-4.2-FFAC45.svg" alt="Swift: 4.2">
     </a>
     <a href="https://github.com/piknotech/TrivialTorch/releases">
         <img src="https://img.shields.io/badge/version-1.0-blue.svg"

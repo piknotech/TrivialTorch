@@ -95,7 +95,7 @@ final class Slider: UIView {
             )
             let boundsAnimation = CABasicAnimation(keyPath: "bounds")
             boundsAnimation.duration = AnimationInfo.sliderAnimationTime
-            boundsAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
+            boundsAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName(rawValue: "linear"))
             iconImageView.layer.add(boundsAnimation, forKey: "bounds")
 
             iconImageView.layer.position = CGPoint(
@@ -104,13 +104,13 @@ final class Slider: UIView {
             )
             let positionAnimation = CABasicAnimation(keyPath: "position")
             positionAnimation.duration = AnimationInfo.sliderAnimationTime
-            positionAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
+            positionAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName(rawValue: "linear"))
             iconImageView.layer.add(positionAnimation, forKey: "position")
 
             backgroundLayer.path = newPath.cgPath
             let pathAnimation = CABasicAnimation(keyPath: "path")
             pathAnimation.duration = AnimationInfo.sliderAnimationTime
-            pathAnimation.timingFunction = CAMediaTimingFunction(name: "linear")
+            pathAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName(rawValue: "linear"))
             backgroundLayer.add(pathAnimation, forKey: "path")
 
             CATransaction.commit()
